@@ -26,8 +26,8 @@ if(url.includes("?")){
         if(szakmaValues.length > 0){
             let helyes = 0;
             let rossz = 0;
-            for(let szakma of szakmaValues){
-                if(szakma === "programozas" || szakma === "gepeszet"){
+            for(let q3 of szakmaValues){
+                if(szakm === "programozas" || szakma === "gepeszet"){
                     helyes++;
                 } else {
                     rossz++;
