@@ -22,23 +22,27 @@ if(url.includes("?")){
         }
     
 
-    let szakmaValues = params.getAll("q3");
+    let harmadikvalszvalues = params.getAll("q3");
         if(szakmaValues.length > 0){
             let helyes = 0;
             let rossz = 0;
-            for(let q3 of szakmaValues){
-                if(szakm === "programozas" || szakma === "gepeszet"){
+            for(let q3 of harmadikvalszvalues){
+                if(q3 === "Adatbázis kezelése" || q3 ===  "Webfejlesztés" || q3 === "Mobilalkalmazás fejlesztés" || q3 === "Játékfejlesztés"){
                     helyes++;
-                } else {
-                    rossz++;
-                }
+                } 
             }
             
-            if(helyes === 2 && rossz === 0){
-                document.getElementById("kerdes2").innerHTML = "2.milyen szakmak vannak a pg-ben - <span style='color:green'>helyes valasz</span>";
-            } else {
-                document.getElementById("kerdes2").innerHTML = "2.milyen szakmak vannak a pg-ben - <span style='color:orange'>reszben helyes (" + helyes + "/2 helyes)</span>";
-            }
+            if(helyes === 1){
+                document.getElementById("kerdes2").innerHTML = ">III. Melyik területeken használjuk a JavaScriptet? - <span style='color:red'>Csak egyet találtál el, de jó az összes</span>";
+            } 
+            if(helyes === 2 || helyes === 3){
+                document.getElementById("kerdes2").innerHTML = ">III. Melyik területeken használjuk a JavaScriptet? - <span style='color:red'>Csak egyet találtál el, de jó az összes</span>";
+            } 
+            if(helyes === 4){
+                document.getElementById("kerdes2").innerHTML = ">III. Melyik területeken használjuk a JavaScriptet? - <span style='color:red'>Csak egyet találtál el, de jó az összes</span>";
+            } 
+
+            
         }
 
 
