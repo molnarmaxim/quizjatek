@@ -8,12 +8,13 @@
 </head>
 <body>
     <div class="introduction">
+        <button onclick="resi()">Restart</button>
         <h1>Programnyelv kvíz</h1>
     </div>
 
     <div class="feladat">
         <form method="get">
-            <h3 id="kerdes1">1. Melyik programnyelven íródott ez a kód?</h3>
+            <h3 id="kerdes1">I. Melyik programnyelven íródott ez a kód?</h3>
             <img src="/kepek/1.png" alt="">
             
             <div class="option">
@@ -36,6 +37,33 @@
                 <label for="ruby">Ruby</label>
             </div>
             
+            <h3 id="kerdes2">II. Melyik nyelvben használjuk ez a arancsot?</h3>
+            <img src="kepek/2.png" alt="">
+
+            <div class="option">
+                            <input type="text" id="q2" name="q2" placeholder="Írd ide a választ...">
+                        </div>
+            
+            <h3 id="kerdes3">III. Melyik területeken használjuk a JavaScriptet?</h3>
+            <img src="kepek/4.jpg" alt="">
+
+            <div class="option">
+                <input type="checkbox" id="webfejlesztes" name="q3" value="webfejlesztes">
+                <label for="webfejlesztes">Webfejlesztés</label>
+            </div>
+            <div class="option">
+                <input type="checkbox" id="adatbazis" name="q3" value="adatbazis">
+                <label for="adatbazis">Adatbázis kezelése</label>
+            </div>
+            <div class="option">
+                <input type="checkbox" id="mobilalkalmazas" name="q3" value="mobilalkalmazas">
+                <label for="mobilalkalmazas">Mobilalkalmazás fejlesztés</label>
+            </div>
+            <div class="option">
+                <input type="checkbox" id="jatekfejlesztes" name="q3" value="jatekfejlesztes">
+                <label for="jatekfejlesztes">Játékfejlesztés</label>
+            </div>
+
             <input type="submit" value="Submit">
         </form>
 

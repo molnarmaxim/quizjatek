@@ -4,5 +4,84 @@ Melyik programnyelvben íródott ez? print("Hello World")
 helyes valasz: python
 rossz valaszok: java, c#, php
 
-II.
-Melyik nyelvben használjuk a console.log()
+2️⃣ Melyik nyelvben használjuk a console.log() parancsot?
+
+A) Python
+B) PHP
+C) JavaScript
+D) C#
+
+✅ Helyes válasz: C) JavaScript
+
+3️⃣ Melyik HTML taggel hozunk létre gombot?
+
+A) <input>
+B) <button>
+C) <div>
+D) <span>
+
+✅ Helyes válasz: B) <button>
+
+4️⃣ Melyik nyelv NEM programozási nyelv?
+
+A) HTML
+B) CSS
+C) Python
+D) Java
+
+✅ Helyes válasz: B) CSS
+(A CSS stílusleíró nyelv)
+
+5️⃣ Melyik CSS tulajdonsággal változtatjuk meg a szöveg színét?
+
+A) font-style
+B) background-color
+C) color
+D) text-align
+
+✅ Helyes válasz: C) color
+
+6️⃣ Melyik nyelv fut közvetlenül a böngészőben?
+
+A) Java
+B) Python
+C) JavaScript
+D) C++
+
+✅ Helyes válasz: C) JavaScript
+
+7️⃣ Mit jelent a HTML rövidítés?
+
+A) Hyperlinks and Text Markup Language
+B) Home Tool Markup Language
+C) Hyper Text Markup Language
+D) High Text Machine Language
+
+✅ Helyes válasz: C) Hyper Text Markup Language
+
+8️⃣ Melyik karakterrel kezdődik egy CSS class?
+
+A) #
+B) .
+C) @
+D) *
+
+✅ Helyes válasz: B) .
+
+9️⃣ Melyik fájlkiterjesztés tartozik a JavaScripthez?
+
+A) .java
+B) .js
+C) .script
+D) .jsx
+
+✅ Helyes válasz: B) .js
+
+🔟 Mire használjuk a <link> taget HTML-ben?
+
+A) JavaScript betöltésére
+B) Kép megjelenítésére
+C) CSS fájl csatolására
+D) Gomb létrehozására
+
+✅ Helyes válasz: C) CSS fájl csatolására
