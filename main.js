@@ -97,7 +97,7 @@ if(url.includes("?")){
     }
 
     let kilencedikvalasztas = params.get("q9");
-    if (kilencedikvalasztas == "css") {
+    if (kilencedikvalasztas == "css1") {
         document.getElementById("kerdes9").innerHTML = "IX. Mire használjuk a <\\link> taget HTML-ben? - <span style='color:green'>Helyes válasz</span>";
         score++;
     } else if (kilencedikvalasztas) {
