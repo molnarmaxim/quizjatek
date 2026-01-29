@@ -5,7 +5,7 @@ if(url.includes("?")){
     let score = 0;
     let maxScore = 10;
 
-    if(params.get("q1") === "Python")
+    if(params.get("q1") == "Python")
     {
         document.getElementById("kerdes1").innerHTML = "I.Melyik programnyelvben íródott ez a kód? - <span style='color:green'>Helyes válasz</span>";
         score++;
@@ -17,7 +17,7 @@ if(url.includes("?")){
     let masodikvalasz = params.get("q2");
         if(masodikvalasz){
             masodikvalasz = masodikvalasz.toLowerCase().trim();
-            if(masodikvalasz === "javaskript" || masodikvalasz === "javascript" || masodikvalasz === "js"){
+            if(masodikvalasz == "javaskript" || masodikvalasz == "javascript" || masodikvalasz == "js"){
                 document.getElementById("kerdes2").innerHTML = "II. Melyik nyelvben használjuk ez a arancsot? - <span style='color:green'>Helyes válasz</span>";
                 score++;
             } else {
@@ -30,20 +30,20 @@ if(url.includes("?")){
         if(harmadikvalszvalues.length > 0){
             let helyes = 0;
             for(let q3 of harmadikvalszvalues){
-                if(q3 === "Adatbázis kezelése" || q3 ===  "Webfejlesztés" || q3 === "Mobilalkalmazás fejlesztés" || q3 === "Játékfejlesztés"){
+                if(q3 == "Adatbázis kezelése" || q3 ==  "Webfejlesztés" || q3 == "Mobilalkalmazás fejlesztés" || q3 == "Játékfejlesztés"){
                     helyes++;
                 } 
             }
-            if(helyes === 1){
+            if(helyes == 1){
                 document.getElementById("kerdes3").innerHTML = "III. Melyik területeken használjuk a JavaScriptet? - <span style='color:red'>Csak egyet találtál el, de jó az összes</span>";
             } 
-            if(helyes === 2){
+            if(helyes == 2){
                 document.getElementById("kerdes3").innerHTML = "III. Melyik területeken használjuk a JavaScriptet? - <span style='color:orange'>Csak kettőt találtál el, de jó az összes</span>";
             } 
-            if(helyes === 3){
+            if(helyes == 3){
                 document.getElementById("kerdes3").innerHTML = "III. Melyik területeken használjuk a JavaScriptet? - <span style='color:orange'>Csak hármat találtál el, de jó az összes</span>";
             } 
-            if(helyes === 4){
+            if(helyes == 4){
                 document.getElementById("kerdes3").innerHTML = "III. Melyik területeken használjuk a JavaScriptet? - <span style='color:green'>Helyes válasz</span>";
                 score++;
             } 
@@ -53,10 +53,10 @@ if(url.includes("?")){
     let negyedikvalasztas = params.get("q4");
         if(negyedikvalasztas){
             negyedikvalasztas = negyedikvalasztas.toLowerCase().trim();
-            if(negyedikvalasztas === "color"){
+            if(negyedikvalasztas == "color"){
                 document.getElementById("kerdes4").innerHTML = "IV. Melyik CSS tulajdonsággal változtatjuk meg a szöveg színét? - <span style='color:green'>Helyes válasz</span>";
                 score++;
-            } else if(negyedikvalasztas === "bartabulcsu"||negyedikvalasztas === "bártabulcsú" || negyedikvalasztas === "bártabulcsu" || negyedikvalasztas === "bartabulcsú" || negyedikvalasztas === "bárta bulcsú" || negyedikvalasztas === "bárta bulcsu" || negyedikvalasztas === "barta bulcsú" || negyedikvalasztas === "barta bulcsu"|| negyedikvalasztas === "bartabulcsu"){
+            } else if(negyedikvalasztas == "bartabulcsu"||negyedikvalasztas == "bártabulcsú" || negyedikvalasztas == "bártabulcsu" || negyedikvalasztas == "bartabulcsú" || negyedikvalasztas == "bárta bulcsú" || negyedikvalasztas == "bárta bulcsu" || negyedikvalasztas == "barta bulcsú" || negyedikvalasztas == "barta bulcsu"|| negyedikvalasztas == "bartabulcsu"){
             document.getElementById("kerdes4").innerHTML = "IV. Melyik CSS tulajdonsággal változtatjuk meg a szöveg színét? - <span style='color:red'>Helytelen válasz (o egy meleg(szin), de nem jo valasz)</span>";
             } else {
             document.getElementById("kerdes4").innerHTML = "IV. Melyik CSS tulajdonsággal változtatjuk meg a szöveg színét? - <span style='color:red'>Helytelen válasz (helyes: color)</span>";
@@ -64,7 +64,7 @@ if(url.includes("?")){
         }
 
     let otodikvalasztas = params.get("q5"); 
-        if (otodikvalasztas === "javascript") {
+        if (otodikvalasztas == "javascript") {
             document.getElementById("kerdes5").innerHTML = "V. Melyik fut közvetlenül a böngészőben? - <span style='color:green'>Helyes válasz</span>";
             score++;
         } else if (otodikvalasztas) {
@@ -72,7 +72,7 @@ if(url.includes("?")){
         }
 
         let hatodikvalasztas = params.get("q6");
-        if (hatodikvalasztas === "js") {
+        if (hatodikvalasztas == "js") {
             document.getElementById("kerdes6").innerHTML = "VI. Melyik fájlkiterjesztés tartozik Javascripthez? - <span style='color:green'>Helyes válasz</span>";
             score++;
         } else if (hatodikvalasztas) {
@@ -80,7 +80,7 @@ if(url.includes("?")){
         }
 
     let hetedikvalasztas = params.get("q7");
-    if (hetedikvalasztas === "hypertext") {
+    if (hetedikvalasztas == "hypertext") {
         document.getElementById("kerdes7").innerHTML = "VII. Mi a HTML rövidítése? - <span style='color:green'>Helyes válasz</span>";
         score++;
     } else if (hetedikvalasztas) {
@@ -89,7 +89,7 @@ if(url.includes("?")){
 
 
     let nyolcadikvalasztas = params.get("q8");
-    if (nyolcadikvalasztas === "dot" ) {
+    if (nyolcadikvalasztas == "dot" ) {
         document.getElementById("kerdes8").innerHTML = "VIII. Melyik karakterrel kezdődik egy CSS class? - <span style='color:green'>Helyes válasz</span>";
         score++;
     } else if (nyolcadikvalasztas) {
@@ -97,7 +97,7 @@ if(url.includes("?")){
     }
 
     let kilencedikvalasztas = params.get("q9");
-    if (kilencedikvalasztas === "css") {
+    if (kilencedikvalasztas == "css") {
         document.getElementById("kerdes9").innerHTML = "IX. Mire használjuk a <\\link> taget HTML-ben? - <span style='color:green'>Helyes válasz</span>";
         score++;
     } else if (kilencedikvalasztas) {
@@ -105,7 +105,7 @@ if(url.includes("?")){
     }
 
     let tizedikvalasztas = params.get("q10");
-    if (tizedikvalasztas === "java") {   
+    if (tizedikvalasztas == "java") {   
         document.getElementById("kerdes10").innerHTML = "X. Melyik nyelvhez tartozik az alábbi kód? - <span style='color:green'>Helyes válasz</span>";
         score++;
     } else if (tizedikvalasztas) {
@@ -122,7 +122,7 @@ function resi() {
 
 function validateForm() {
     let q3Checked = document.querySelectorAll('input[name="q3"]:checked').length;
-    if (q3Checked === 0) {
+    if (q3Checked == 0) {
         alert("Kérlek válassz legalább egyet a 3. kérdésnél!");
         return false;
     }
